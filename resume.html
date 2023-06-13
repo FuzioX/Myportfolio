@@ -74,7 +74,8 @@
             <div class="col-lg-8 col-sm-12 mt-5 pt-5" data-aos="fade-left" data-aos-offset="400"
                 data-aos-easing="ease-in-sine">
                 <div class="banner_content mt-3">
-                    <h3 class="text-uppercase text-light">Hell0</h3>
+                    <h3 class="text-uppercase text-light"
+                        data-anijs="if: click, do: flip animated, to: .img-1, after: $removeAnim">Hell0</h3>
                     <div class="text-uppercase pb-1 heading-section ">
                         <h1 class="big" data-anijs="if: mouseover, do: swing animated">Faizan</h1>
                     </div>
@@ -359,7 +360,8 @@
                             web developer.
                             The client wanted
                             an e-commerce website to sell custom frames online.</p>
-                        <a href="https://faizu-7.github.io/RajuFrames/" class="card-link boot btn btn-outline-light mt-2">Visite</a>
+                        <a href="https://faizu-7.github.io/RajuFrames/"
+                            class="card-link boot btn btn-outline-light mt-2">Visite</a>
                     </div>
                 </div>
             </div>
@@ -374,7 +376,8 @@
                             undertook,
                             which allowed me to showcase
                             my skills and expertise as a web developer.</p>
-                        <a href="https://faizu-7.github.io/PadavaParshad/" class="card-link boot btn btn-outline-light mt-2">Visite</a>
+                        <a href="https://faizu-7.github.io/PadavaParshad/"
+                            class="card-link boot btn btn-outline-light mt-2">Visite</a>
                     </div>
                 </div>
             </div>
@@ -420,7 +423,7 @@
                                 <a href="https://goo.gl/maps/L6kaZmLomQNXLXE77"> <span
                                         class="fas fa-map-marker-alt"></span></a>
                             </div>
-                            <div class="text">Singot</div>
+                            <div class="text" data-anijs="if: mouseover, do: bounce animated">Singot</div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 mt-5 d-flex " data-aos="fade-up">
@@ -428,7 +431,7 @@
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <a href="tel no."> <span class="fas fa-phone"></span></a>
                             </div>
-                            <div class="text">011-99-99</div>
+                            <div class="text" data-anijs="if: mouseover, do: bounce animated">011-99-99</div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 mt-5 d-flex " data-aos="fade-left">
@@ -437,7 +440,7 @@
                                 <a class="a" href="mailto: faizankhan93099@gmail.com"><span
                                         class="far fa-envelope-open"></span></a>
                             </div>
-                            <div class="text">@gmail.com</div>
+                            <div class="text" data-anijs="if: mouseover, do: bounce animated">@gmail.com</div>
                         </div>
                     </div>
                 </div>
@@ -503,7 +506,9 @@
     <script>
         AOS.init();
     </script>
-     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 </body>
 
 </html>
