@@ -23,47 +23,43 @@
 
     <!-- nav -->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="resume.html">
+            <a class="navbar-brand text-light" href="resume.html">
                 <img src="img2.png" alt="" height="50px" style="padding-right: 10px;">
                 PortFolio</a>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="fas fa-bars-staggered"></i>
-            </button>
+            <div class="menu__icon text-danger">
+                <span></span>
+            </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
+            <div data-sub_menu_auto_close="true" class="menu__body ">
+                <ul class="navbar-nav d-flex justify-content-end">
                     <li>
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a data-goto=".page__section_1" href="#" class="nav-link text-light active">Home </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#about">About</a>
+                        <a data-goto=".page__section_2" href="#about" class="nav-link text-light">About </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#skill">Skill</a>
+                        <a data-goto=".page__section_3" href="#skill" class="nav-link text-light">Skill </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#service">Service</a>
+                        <a data-goto=".page__section_1" href="#service" class="nav-link text-light">Service </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#Education">Education</a>
+                        <a data-goto=".page__section_2" href="#Education" class="nav-link text-light">Education </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#Project">Project</a>
+                        <a data-goto=".page__section_2" href="#Project" class="nav-link text-light">Project </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a data-goto=".page__section_3" href="#contact" class="nav-link text-light">Contact </a>
                     </li>
                     <li class="mt-2">
                         <a class="nav-link2" href="index.html"><i class="fas fa-circle-half-stroke"></i></a>
                     </li>
                 </ul>
             </div>
-
-        </div>
     </nav>
     <!-- nav end -->
 
@@ -509,6 +505,45 @@
     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
     <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
     <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+
+      <!-- ---------- -->
+      <script>
+
+        // burger menu
+        const iconMenu = document.querySelector('.menu__icon');
+        const menuBody = document.querySelector('.menu__body');
+        if (iconMenu) {
+            iconMenu.addEventListener('click', function (e) {
+                document.body.classList.toggle('_lock');
+                iconMenu.classList.toggle('_active');
+                menuBody.classList.toggle('_active');
+            });
+        }
+
+        // scroll on click
+        const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
+        if (menuLinks.length > 0) {
+            menuLinks.forEach((menuLink) => {
+                menuLink.addEventListener('click', onMenuLinkClick);
+            });
+
+            function onMenuLinkClick(e) {
+                const menuLink = e.target;
+                if (
+                    menuLink.dataset.goto &&
+                    document.querySelector(menuLink.dataset.goto)
+                ) {
+                    const gotoBlock = document.querySelector(menuLink.dataset.goto);
+                    const gotoBlockValue =
+                        gotoBlock.getBoundingClientRect().top +
+                        pageYOffset -
+                        document.querySelector('.header').offsetHeight;
+
+                }
+            }
+        }
+
+    </script>
 </body>
 
 </html>
