@@ -103,7 +103,7 @@
         <div class="row">
             <!-- Image Column -->
             <div class=" col-lg-6 col-md-12 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
-                <div  data-anijs="if: click, do: hinge animated, to: .image-2, before: validateLogin">
+                <div data-anijs="if: click, do: hinge animated, to: .image-2, before: validateLogin">
                     <img title="Faizan Khan" src="img1.png" alt="" height="450px" width="500px" class="image-2">
                 </div>
             </div>
@@ -112,8 +112,7 @@
 
                 <div>
                     <h1 class="heading text-light display-4 pt-5 mt-2">Faizan Khan</h1>
-                    <h2 class="ab">Front-end Developer <br>&<span class="span text-danger"> Designer</span>
-                    </h2>
+                    <h2><span class="animate"></span></h2>
                 </div>
 
                 <p class="text-light span">As a <strong class="text-primary font-italic"> Web Designer & Front-End
@@ -175,8 +174,8 @@
                 <div class="progress-title">
                     <h3 class="text-light">JS</h3>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 5%;">
-                            <div class="progress-value">5%</div>
+                        <div class="progress-bar" style="width: 35%;">
+                            <div class="progress-value">35%</div>
                         </div>
                     </div>
                 </div>
@@ -506,8 +505,26 @@
     <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
     <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 
-      <!-- ---------- -->
-      <script>
+    <!-- ---------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed(".animate", {
+            strings: [
+                "Front-end Developer.",
+                " Web Designer.",
+            ],
+            typeSpeed: 100,
+            backDelay: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+    <!-- ---------- -->
+
+    <script>
 
         // burger menu
         const iconMenu = document.querySelector('.menu__icon');
