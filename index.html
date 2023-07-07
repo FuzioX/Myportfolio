@@ -74,7 +74,7 @@
                 data-aos-easing="ease-in-sine">
                 <div class="banner_content mt-3">
                     <h3 class="text-uppercase"
-                    data-anijs="if: mouseover, do: flip animated, to: .img-1, after: $removeAnim">Hell0</h3>
+                        data-anijs="if: mouseover, do: flip animated, to: .img-1, after: $removeAnim">Hell0</h3>
                     <div class="text-uppercase pb-1 heading-section ">
                         <h1 class="big" data-anijs="if: mouseover, do: swing animated">Faizan</h1>
                     </div>
@@ -119,9 +119,7 @@
 
                 <div>
                     <h1 class="heading display-4 pt-5 mt-2">Faizan Khan</h1>
-                    <h2 class="ab">Front-end Developer <br>&<span class="span text-danger"
-                            data-anijs="if: mouseover, do: bounceInDown animated"> Designer</span>
-                    </h2>
+                    <h2><span class="animate"></span></h2>
                 </div>
 
                 <p class="span">As a <strong class="text-primary font-italic"> Web Designer & Front-End
@@ -183,8 +181,8 @@
                 <div class="progress-title">
                     <h3>JS</h3>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 5%;">
-                            <div class="progress-value">5%</div>
+                        <div class="progress-bar" style="width:35%;">
+                            <div class="progress-value">35%</div>
                         </div>
                     </div>
                 </div>
@@ -510,8 +508,25 @@
     <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
     <script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 
-      <!-- ---------- -->
-      <script>
+    <!-- ---------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed(".animate", {
+            strings: [
+                "Front-end Developer. ",
+                " Web Designer.",
+            ],
+            typeSpeed: 100,
+            backDelay: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+    <!-- ---------- -->
+    <script>
 
         // burger menu
         const iconMenu = document.querySelector('.menu__icon');
