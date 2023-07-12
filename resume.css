@@ -594,7 +594,7 @@
 }
 
 .categories-area .single-cat .cat-icon span {
-    color: #d8d8d8;
+    color: #ffffff;
     font-size: 50px;
     margin-bottom: 30px;
     display: block;
@@ -640,7 +640,8 @@
 }
 
 .categories-area .single-cat:hover .cat-icon span {
-    background: #5a5757
+    background: #ffffff;
+    color: #000;
 }
 
 .categories-area .single-cat:hover .cat-cap h5 {
@@ -1027,3 +1028,57 @@
 }
 
 /* */
+
+
+.rjs-cursor {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    pointer-events: none;
+    transition: none;
+    opacity: 0;
+    transform: translate(-50% -50%);
+}
+
+.rjs-cursor-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: solid yellow 2px;
+    transition: all 0.2s ease;
+    transform-origin: 50% 50%;
+}
+
+.rjs-cursor.rjs_cursor_visible {
+    opacity: 1;
+}
+
+.rjs-cursor.rjs_cursor_hidden {
+    opacity: 0;
+}
+
+* {
+    cursor: none;
+}
+
+@media (pointer: none),
+(pointer: coarse) {
+
+    #rjs_cursor,
+    #rjs_cursor .rjs-cursor-icon {
+        display: none !important;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    * {
+        cursor: auto !important;
+    }
+}
+
+.rjs-cursor.rjs_cursor_hover .rjs-cursor-icon {
+    transform: scale(2);
+}
