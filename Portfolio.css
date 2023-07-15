@@ -1040,3 +1040,18 @@
     pointer-events: none;
     z-index: 1;
 }
+
+@media (max-width: 414px) {
+
+    .circle-follow {
+        width: 0;
+        height: 0;
+        border: none;
+    }
+
+    .circle {
+        width: 0;
+        height: 0;
+
+    }
+}
