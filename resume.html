@@ -19,7 +19,7 @@
     <title>My PortFolio</title>
 </head>
 
-<body class="bg-dark" data-bs-spy="scroll" data-bs-target="navbar-nav" data-bs-offset="100">
+<body style="background-color: #191919;" data-bs-spy="scroll" data-bs-target="navbar-nav" data-bs-offset="100">
 
     <!--  -->
     <div class="circle"></div>
@@ -28,7 +28,7 @@
 
     <!-- nav -->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="resume.html">
                 <img src="img2.png" alt="" height="50px" style="padding-right: 10px;">
@@ -38,7 +38,7 @@
             </div>
 
             <div data-sub_menu_auto_close="true" class="menu__body ">
-                <ul class="navbar-nav d-flex justify-content-end">
+                <ul class="navbar-nav">
                     <li>
                         <a data-goto=".page__section_1" href="#" class="nav-link text-light active">Home </a>
                     </li>
@@ -60,9 +60,6 @@
                     <li>
                         <a data-goto=".page__section_3" href="#contact" class="nav-link text-light">Contact </a>
                     </li>
-                    <li class="mt-2">
-                        <a class="nav-link2" href="index.html"><i class="fas fa-circle-half-stroke"></i></a>
-                    </li>
                 </ul>
             </div>
     </nav>
@@ -81,6 +78,7 @@
                     </div>
                     <h1 class="big-2 text-light text-uppercase">I am Faizan Khan</h1>
                 </div>
+                <a class="nav-link2 mt-2" href="index.html"><i class="sun bi bi-brightness-low mt-2"></i></a>
             </div>
 
             <div class="col-lg-4 col-sm-12 mt-3 pt-3" data-aos="zoom-out">
@@ -533,7 +531,6 @@
     <!-- ---------- -->
 
     <script>
-
         // burger menu
         const iconMenu = document.querySelector('.menu__icon');
         const menuBody = document.querySelector('.menu__body');
@@ -544,29 +541,6 @@
                 menuBody.classList.toggle('_active');
             });
         }
-
-        // scroll on click
-        const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
-        if (menuLinks.length > 0) {
-            menuLinks.forEach((menuLink) => {
-                menuLink.addEventListener('click', onMenuLinkClick);
-            });
-
-            function onMenuLinkClick(e) {
-                const menuLink = e.target;
-                if (
-                    menuLink.dataset.goto &&
-                    document.querySelector(menuLink.dataset.goto)
-                ) {
-                    const gotoBlock = document.querySelector(menuLink.dataset.goto);
-                    const gotoBlockValue =
-                        gotoBlock.getBoundingClientRect().top +
-                        pageYOffset -
-                        document.querySelector('.header').offsetHeight;
-                }
-            }
-        }
-
     </script>
 
     <!------- ------>
