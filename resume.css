@@ -1,4 +1,3 @@
-/* nav */
 * {
     padding: 0;
     margin: 0;
@@ -125,6 +124,8 @@
 }
 
 /*  */
+
+/* nav */
 
 .navbar-brand {
     font-size: 29px;
@@ -401,7 +402,7 @@
 
 @media screen and (max-width: 414px) {
     .heading-section-1 h1.big {
-        margin-top: 21px;
+        margin-top: 22px;
     }
 
     .heading-section-1 h1.big2 {
@@ -451,7 +452,7 @@
 
 .span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
+    font-size: 20px;
 }
 
 
