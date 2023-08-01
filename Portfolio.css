@@ -402,7 +402,7 @@
 
 @media screen and (max-width: 414px) {
     .heading-section-1 h1.big {
-        margin-top: 21px;
+        margin-top: 22px;
     }
 
     .heading-section-1 h1.big2 {
@@ -452,6 +452,7 @@
 
 .span {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 
