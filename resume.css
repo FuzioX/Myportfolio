@@ -1,3 +1,5 @@
+/* nav */
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +13,7 @@
     position: fixed;
     width: 30px;
     height: 18px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
     right: 29px;
     font-size: 30px;
     transition: all 0.3s ease-in-out;
@@ -24,7 +26,7 @@
     height: 10%;
     width: 100%;
     transition: all 0.3s ease 0s;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 .menu__icon::before,
@@ -53,7 +55,7 @@
 .menu__icon._active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .menu__body {
@@ -62,7 +64,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(44, 40, 40, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 100px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -125,8 +127,6 @@
 
 /*  */
 
-/* nav */
-
 .navbar-brand {
     font-size: 29px;
     font-family: Georgia, serif;
@@ -149,26 +149,26 @@
     width: 0;
     height: 3px;
     transform: translate(-50%);
-    background: wheat;
+    background: indigo;
     transition: width 0.5s;
 }
 
 .nav-link2 {
-    color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
     font-weight: 800;
 }
 
 .nav-link2:hover {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 .sun {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .nav-link:hover::after {
     width: 50%;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 /*  */
@@ -188,7 +188,7 @@
     position: absolute;
     top: 50%;
     left: 23%;
-    background: #ffffff;
+    background: #000000;
 }
 
 @media (max-width: 414px) {
@@ -211,7 +211,7 @@
     position: absolute;
     top: 0px;
     text-align: start;
-    color: rgba(247, 237, 237, 0.144);
+    color: rgb(216, 178, 178);
     font-size: 8vw !important;
     z-index: -1;
     font-weight: 900;
@@ -259,7 +259,7 @@
 
 .img-1 {
     border-radius: 200%;
-    border: 3px solid rgb(71, 64, 64);
+    border: 3px solid rgb(216, 178, 178);
     height: 330px;
     width: 330px;
     padding-top: 7px;
@@ -323,7 +323,7 @@
 
 /*  */
 
-/*about */
+/* about */
 
 .heading-section-1 {
     position: relative;
@@ -334,7 +334,7 @@
     top: 0px;
     left: 0;
     font-size: 9vw;
-    color: rgba(247, 237, 237, 0.144);
+    color: rgb(216, 178, 178);
     z-index: -1;
     font-weight: 900;
     letter-spacing: 8px;
@@ -345,7 +345,7 @@
     top: 0px;
     left: 0;
     font-size: 9vw;
-    color: rgba(247, 237, 237, 0.144);
+    color: rgb(216, 178, 178);
     z-index: -1;
     font-weight: 900;
     letter-spacing: 8px;
@@ -364,6 +364,10 @@
     font-weight: 700;
     letter-spacing: 14px;
     font-family: Georgia, serif;
+}
+
+.image-2 {
+    filter: hue-rotate(90deg);
 }
 
 @media screen and (max-width: 770px) {
@@ -407,7 +411,7 @@
 
     .heading-section-1 h1.big2 {
         font-size: 12vw !important;
-        margin-top: 28px;
+        margin-top: 27px;
     }
 
     .heading-section-1 h2 {
@@ -481,7 +485,7 @@
 .animate {
     font-size: 35px;
     line-height: 1.28em;
-    color: yellow;
+    color: #89b906;
     font-weight: 600;
     padding-bottom: 18px;
     font-family: Georgia, serif;
@@ -546,7 +550,7 @@
     height: 7px;
     background-color: white;
     border-radius: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #191919;
     margin-bottom: 40px;
     overflow: visible;
     position: relative;
@@ -566,7 +570,7 @@
     font-size: 15px;
     color: #fff;
     border-radius: 0 0 15px 15px;
-    border: 1px solid #ffffff;
+    border: 1px solid #000;
     border-top: none;
     box-shadow: 0 2px 2px #4f4c4c;
     position: absolute;
@@ -594,9 +598,9 @@
 }
 
 .categories-area .single-cat {
-    border: 1px solid #000000;
+    border: 1px solid #e1ebf7;
     border-radius: 6px;
-    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 61px 22px;
     transition: all .4s ease-out 0s;
     position: relative;
@@ -613,11 +617,11 @@
     left: 0;
     z-index: -1;
     border-radius: 6px;
-    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .categories-area .single-cat .cat-icon span {
-    color: #ffffff;
+    color: #191919;
     font-size: 50px;
     margin-bottom: 30px;
     display: block;
@@ -636,19 +640,19 @@
     font-family: Courier New;
     margin-bottom: 21px;
     display: block;
-    transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s
 }
 
 .categories-area .single-cat .cat-cap p {
     margin-bottom: 36px;
-    color: rgb(102, 92, 92);
+    color: black;
     font-size: 16px;
     transition: all .2s ease-out 0s;
     margin: 0
 }
 
 .categories-area .single-cat .cat-cap a {
-    color: #e2e2e2;
+    color: #191919;
     font-size: 16px;
     font-weight: 600;
     transition: all .2s ease-out 0s
@@ -663,20 +667,19 @@
 }
 
 .categories-area .single-cat:hover .cat-icon span {
-    background: #ffffff;
-    color: #000;
+    background: #fff
 }
 
 .categories-area .single-cat:hover .cat-cap h5 {
-    color: #d8cdcd
+    color: #fff
 }
 
 .categories-area .single-cat:hover .cat-cap p {
-    color: #ebebeb
+    color: #fff
 }
 
 .categories-area .single-cat:hover .cat-cap a {
-    color: #dbdbdb;
+    color: #191919;
 }
 
 /*  */
@@ -756,14 +759,6 @@
     background: #f9bf3f;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
-    background: #a84cb8;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
-    background: #2fa499;
-}
-
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
     background: #fff;
     width: 20px;
@@ -773,11 +768,10 @@
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
     position: relative;
-    background: #545557;
+    background: #f2f3f7;
     padding: 1.5em;
     margin-left: 60px;
     background-clip: padding-box;
-    color: white;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
@@ -788,7 +782,7 @@
     height: 0;
     border-style: solid;
     border-width: 9px 9px 9px 0;
-    border-color: transparent #545557 transparent transparent;
+    border-color: transparent #f2f3f7 transparent transparent;
     left: 0;
     top: 10px;
     margin-left: -9px;
@@ -821,12 +815,13 @@
 .services {
     margin-bottom: 30px;
     padding: 1.5em;
-    box-shadow: rgba(146, 122, 122, 0.26) 0px 1px 2px, rgba(121, 115, 115, 0.678) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
     border-bottom: 2px solid #2c98f0;
 }
 
 .services:hover {
-    box-shadow: rgb(145, 140, 140) 0px 1px 2px, rgba(90, 83, 83, 0.26) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .services .icon2 {
@@ -843,7 +838,6 @@
     font-family: "Quicksand", Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: white;
 }
 
 .services.color-2 {
@@ -950,17 +944,17 @@
 
 .button {
     display: inline-grid;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     border-radius: 50px;
     padding: 10px;
     width: 150px;
     margin: 15px 5px;
     text-decoration: none;
     text-align: center;
-    color: #ffffff;
-    overflow: hidden;
     font-family: Georgia, serif;
     transition: 3s;
+    color: #000000;
+    overflow: hidden;
 }
 
 .button:hover {
@@ -974,7 +968,7 @@
 
 /* footer */
 #contact {
-    background-color: black;
+    background-color: #191919;
     width: 100%;
 }
 
@@ -987,7 +981,7 @@
     top: 0px;
     left: 0;
     font-size: 9vw;
-    color: rgba(247, 237, 237, 0.178);
+    color: rgba(247, 237, 237, 0.1);
     z-index: -1;
     font-weight: 900;
     letter-spacing: 8px;
@@ -1060,10 +1054,9 @@
     transition: 2s;
 }
 
-/* Cursore */
-
+/* Circle */
 .circle {
-    background-color: #fff;
+    background-color: rgb(9, 9, 138);
     width: 5px;
     height: 5px;
     left: -10px;
@@ -1071,7 +1064,7 @@
 }
 
 .circle-follow {
-    border: solid yellow 2px;
+    border: solid rgb(9, 9, 138) 2px;
     width: 45px;
     height: 45px;
     left: -21px;
@@ -1098,6 +1091,13 @@
     .circle {
         width: 0;
         height: 0;
-
     }
+}
+
+/* Scrool_Bar */
+/* -webkit-text-stroke: 4px red;  color: transparent; */
+
+::-webkit-scrollbar {
+    width: 0.2vw;
+    left: 0px;
 }
