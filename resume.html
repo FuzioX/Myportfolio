@@ -24,8 +24,18 @@
 <body>
 
     <!-- Curcor -->
-     <div class="circle"></div>
-    <div class="circle-follow"></div> 
+    <div class="circle"></div>
+    <div class="circle-follow"></div>
+    <!-- -->
+
+    <!-- Pre_Loader-->
+    <div class="preloader">
+        <div class="text-container">
+            <h1 class="Loder">I</h1>
+            <h1 class="Loder">am</h1>
+            <h1 class="Loder">Faizan Khan</h1>
+        </div>
+    </div>
     <!-- -->
 
     <!-- nav -->
@@ -392,11 +402,12 @@
                             website project that I developed as a web developer.The website included some the
                             necessary information about the Amazon Website.
                         </p>
-                        <a href="https://faizu-7.github.io/Amazon/" class="button" words-slide-up="" text-split=""><span>Visite</span></a>
+                        <a href="https://faizu-7.github.io/Amazon/" class="button" words-slide-up=""
+                            text-split=""><span>Visite</span></a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -696,6 +707,37 @@
             });
 
             gsap.set("[text-split]", { opacity: 1 });
+        });
+    </script>
+
+    <!-- Pre_Loader-->
+    <script>
+        const tl = gsap.timeline();
+
+        tl.to("body", {
+            overflow: "hidden"
+
+        }).to(".preloader .text-container", {
+            duration: 0, opacity: 1, ease: "Power3.easeOut"
+
+        }).from(".preloader .text-container h1", {
+            duration: 1.5, delay: 1, y: 70, skewY: 10, stagger: 0.4, ease: "Power3.easeOut"
+
+        }).to(".preloader .text-container h1", {
+            duration: 1.2, y: 70, skewY: -20, stagger: 0.2, ease: "Power3.easeOut"
+
+        }).to(".preloader", {
+            duration: 1.5, height: "0vh", ease: "Power3.easeOut"
+
+        }).to("body",
+            {
+                overflow: "auto"
+            }
+            ,
+            "-=2"
+
+        ).to(".preloader", {
+            display: "none"
         });
     </script>
 
