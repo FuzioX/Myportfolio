@@ -1101,3 +1101,34 @@
     width: 0.2vw;
     left: 0px;
 }
+
+/* Pre_Loader */
+.Loder {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    -webkit-text-stroke: 1px white;  color: transparent; 
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0a0b;
+    overflow: hidden;
+    z-index: 100;
+
+    .text-container {
+          display: flex;
+          flex-direction: row;
+          gap: 1em;
+          overflow: hidden;
+          color: white;
+          opacity: 0;
+    }
+}
