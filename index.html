@@ -26,6 +26,16 @@
     <div class="circle-follow"></div>
     <!--  -->
 
+    <!-- Pre_Loader-->
+    <div class="preloader">
+        <div class="text-container">
+            <h1 class="Loder">I</h1>
+            <h1 class="Loder">am</h1>
+            <h1 class="Loder">Faizan Khan</h1>
+        </div>
+    </div>
+    <!-- -->
+
     <!-- nav -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
@@ -391,7 +401,8 @@
                             was a website project that I developed as a web developer.
                             The website included some the necessary information about the Amazon Website.
                         </p>
-                        <a href="https://faizu-7.github.io/Amazon/" class="button" words-slide-up="" text-split=""><span>Visite</span></a>
+                        <a href="https://faizu-7.github.io/Amazon/" class="button" words-slide-up=""
+                            text-split=""><span>Visite</span></a>
                     </div>
                 </div>
             </div>
@@ -401,7 +412,7 @@
     <!-- project end  -->
     <br><br>
     <!-- Footer -->
-    
+
     <div id="contact" style="cursor: none;">
         <div class="pt-3 mt-5 row justify-content-center">
             <div class="col-md-12 col-sm-12 mt-5 heading-section-2 text-center" data-aos="fade-up"
@@ -690,6 +701,36 @@
             });
 
             gsap.set("[text-split]", { opacity: 1 });
+        });
+    </script>
+
+    <script>
+        const tl = gsap.timeline();
+
+        tl.to("body", {
+            overflow: "hidden"
+
+        }).to(".preloader .text-container", {
+            duration: 0, opacity: 1, ease: "Power3.easeOut"
+
+        }).from(".preloader .text-container h1", {
+            duration: 1.5, delay: 1, y: 70, skewY: 10, stagger: 0.4, ease: "Power3.easeOut"
+
+        }).to(".preloader .text-container h1", {
+            duration: 1.2, y: 70, skewY: -20, stagger: 0.2, ease: "Power3.easeOut"
+
+        }).to(".preloader", {
+            duration: 1.5, height: "0vh", ease: "Power3.easeOut"
+
+        }).to("body",
+            {
+                overflow: "auto"
+            }
+            ,
+            "-=2"
+
+        ).to(".preloader", {
+            display: "none"
         });
     </script>
 
