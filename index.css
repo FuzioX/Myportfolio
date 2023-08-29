@@ -131,6 +131,10 @@ body {
 
 /* nav */
 
+.navbar {
+    z-index: 1;
+}
+
 .navbar-brand {
     font-size: 29px;
     font-family: Georgia, serif;
@@ -1136,7 +1140,7 @@ body {
     align-items: center;
     background-color: #0c0a0b;
     overflow: hidden;
-    z-index: 100;
+    z-index: 5;
 
     .text-container {
         display: flex;
@@ -1145,5 +1149,11 @@ body {
         overflow: hidden;
         color: white;
         opacity: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .text-container {
+        margin-right: 90px !important;
     }
 }
