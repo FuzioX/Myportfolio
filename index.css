@@ -213,6 +213,7 @@ body {
 
 .heading-section {
     position: relative;
+    padding-bottom: 1px;
 }
 
 .heading-section h1.big {
@@ -335,6 +336,7 @@ body {
 
 .heading-section-1 {
     position: relative;
+    padding-top: 40px;
 }
 
 .heading-section-1 h1.big {
@@ -413,6 +415,10 @@ body {
 }
 
 @media screen and (max-width: 414px) {
+    .heading-section-1 {
+        padding-top: 44px;
+    }
+
     .heading-section-1 h1.big {
         margin-top: 22px;
     }
@@ -992,6 +998,7 @@ body {
 
 .heading-section-2 {
     position: relative;
+    padding-top: 40px;
 }
 
 .heading-section-2 h1.big {
