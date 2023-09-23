@@ -601,6 +601,74 @@
 
 /*  */
 
+/* Skill_2 */
+
+.card {
+    height: 350px;
+    width: 250px;
+    align-items: center;
+    box-shadow: rgb(242, 241, 241) 2px 2px 3px 2px inset, rgba(255, 255, 255, 0.15) -2px -2px 3px inset;
+}
+
+@media (max-width: 414px) {
+    .progress_bar {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+}
+
+.gradient-circle-word {
+    background-image: conic-gradient(black 290deg, #aba2a2 0deg);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.gradient-circle-excle {
+    background-image: conic-gradient(black 180deg, #aba2a2 0deg);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.gradient-circle-ppt {
+    background-image: conic-gradient(black 230deg, #aba2a2 0deg);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.circle-child {
+    height: 154px;
+    width: 154px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.percentage {
+    font-family: Georgia, serif;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.percent {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.lang {
+    font-size: 15px;
+}
+
+/*  */
+
+
 /* service */
 .categories-area.categories-area2 {
     background-image: unset
@@ -609,7 +677,7 @@
 .categories-area .single-cat {
     border: 1px solid #e1ebf7;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     padding: 61px 22px;
     transition: all .4s ease-out 0s;
     position: relative;
@@ -825,7 +893,6 @@
     margin-bottom: 30px;
     padding: 1.5em;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
     border-bottom: 2px solid #2c98f0;
 }
 
@@ -1042,27 +1109,47 @@
     }
 }
 
-.skill {
-    font-size: 30px;
-    display: inline-block;
-    background: 0 0;
-    color: #565656;
-    line-height: 1;
-    padding: 14px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 60px;
+.skill a {
+    background: #454748;
+    position: relative;
     height: 60px;
-    transition: .3s;
-    border: 2px solid #565656;
+    width: 60px;
+    margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: -3px -3px 7px #000000, 3px 3px 5px #1d1d1e;
+    color: #ffffff;
+    transition: 5s;
 }
 
-.skill:hover {
-    border: 2px solid black;
-    color: white;
-    transform: rotate(360deg);
-    transition: 2s;
+.skill a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #161717;
+    box-shadow: inset -3px -3px 7px #0b0b0b, inset 3px 3px 5px #29292a;
 }
+
+.skill a span {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.skill a:hover {
+    transition: 5s;
+}
+
+/*  */
 
 /* Circle */
 .circle {
