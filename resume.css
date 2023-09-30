@@ -6,6 +6,11 @@
     border: 0;
 }
 
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
 /* Manu */
 .menu__icon {
     z-index: 5;
