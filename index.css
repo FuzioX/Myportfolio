@@ -4,6 +4,11 @@
     border: 0;
 }
 
+*::selection {
+    color: #000;
+    background-color: #fff;
+}
+
 body {
     background-color: #191919;
 }
@@ -1089,7 +1094,7 @@ body {
     font-weight: 700;
     letter-spacing: 14px;
     color: rgb(230, 223, 223);
-    font-family: Georgia, serif;
+    font-family:head;
 }
 
 @media screen and (max-width: 770px) {
