@@ -1094,7 +1094,7 @@ body {
     font-weight: 700;
     letter-spacing: 14px;
     color: rgb(230, 223, 223);
-    font-family:head;
+    font-family: head;
 }
 
 @media screen and (max-width: 770px) {
@@ -1118,6 +1118,10 @@ body {
         font-size: 19px;
         letter-spacing: 5px;
     }
+
+    .skill a {
+        margin-left: 150px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1131,43 +1135,48 @@ body {
 }
 
 .skill a {
-    background: #454748;
     position: relative;
-    height: 60px;
+    display: block;
     width: 60px;
-    margin: 0 10px;
-    display: inline-flex;
-    text-decoration: none;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
     border-radius: 50%;
-    transition: all 0.3s;
-    box-shadow: -3px -3px 7px #000000, 3px 3px 5px #1d1d1e;
-    color: #ffffff;
-    transition: 5s;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
 }
 
-.skill a:hover:before {
-    content: "";
+.skill a::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    background: #161717;
-    box-shadow: inset -3px -3px 7px #0b0b0b, inset 3px 3px 5px #29292a;
-}
-
-.skill a span {
-    position: relative;
-    text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 25px;
-    line-height: 60px;
+    border-radius: 50%;
+    background: #ffee10;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.skill a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
 }
 
 .skill a:hover {
-    transition: 5s;
+    color: #ffee10;
+    box-shadow: 0 0 5px #ffee10;
+    text-shadow: 0 0 5px #ffee10;
+}
+
+@media (max-width: 414px) {
+    .skill a {
+        margin-left: 150px;
+    }
 }
 
 /* Cursore */
